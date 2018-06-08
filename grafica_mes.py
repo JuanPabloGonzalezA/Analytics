@@ -5,7 +5,7 @@ import matplotlib.animation as anm
 dias=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo","Festivo","Antes Festivo"]
 cdias=[42,52,47,49,51,52,42,15,15]
 n=9
-datos=np.loadtxt('datos 8x16 YX.txt').reshape((15,8,n))#y,x,d
+datos=np.loadtxt('mes.txt').reshape((31,14,n))#y,x,d
 print datos.shape
 print datos[7,6,0]
 fig=plt.figure()
@@ -31,7 +31,7 @@ plt.xlabel('longitud')
 plt.ylabel('latitud')
 plt.xticks(np.linspace(-0.5,7.5,4),[-74.21,-74.16,-74.10,-74.05])#np.linspace(-74.21022,-74.02318,8))
 plt.yticks(np.linspace(-0.5,14.5,15),[4.84,4.82,4.79,4.77,4.74,4.72,4.69,4.67,4.65,4.62,"4.60",4.57,4.55,4.52,"4.50",4.47])#np.linspace(4.84300,4.49752,15))
-gif.save('9dias.gif')
+gif.save('mes.gif')
 """
 uxt=np.loadtxt('datos.txt')
 x=np.linspace(0,100,len(uxt[0,:]))
