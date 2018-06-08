@@ -5,7 +5,7 @@ import matplotlib.animation as anm
 dias=["Lunes","Martes","Miercoles","Jueves","Viernes","Sabado","Domingo","Festivo","Antes Festivo"]
 cdias=[42,52,47,49,51,52,42,15,15]
 n=9
-datos=np.loadtxt('mes.txt').reshape((31,14,n))#y,x,d
+datos=np.loadtxt('choques3.txt').reshape((31,14,n))#y,x,d
 print datos.shape
 print datos[7,6,0]
 fig=plt.figure()
